@@ -8,7 +8,7 @@
         <remap from="/joint_states" to="/whill/states/jointState" />
     </node>
 
-    <arg name="serialport" default="$(env TTY_WHILL)"/>
+    <arg name="serialport" default="/dev/ttyS0"/>
 
     <node pkg="ros_whill" type="ros_whill" name="whill" output="screen" >
 
