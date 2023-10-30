@@ -1,14 +1,16 @@
 <launch>
-    <arg name="model" default="$(find ros_whill)/xacro/modelc.xacro" />
-    <arg name="gui" default="true" />
+    <!--<arg name="model" default="$(find ros_whill)/xacro/modelc.xacro" />-->
+    <arg name="gui" default="false" />
+    <arg name="model" default="" />
 
+<!--    
     <param name="robot_description" command="$(find xacro)/xacro $(arg model)"/>
   
     <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher">
         <remap from="/joint_states" to="/whill/states/jointState" />
     </node>
-
-    <arg name="serialport" default="$(env TTY_WHILL)"/>
+-->
+    <arg name="serialport" default="/dev/ttyS0"/>
 
     <node pkg="ros_whill" type="ros_whill" name="whill" output="screen" >
 
