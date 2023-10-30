@@ -1,7 +1,7 @@
 #
 #  Initial Speed Profile
 #
-init_speed/forward/speed: 0.567   # [m/s]
+init_speed/forward/speed: 1.567   # [m/s]
 init_speed/forward/acc: 0.23      # [m/ss]
 init_speed/forward/dec: 1.25      # [m/ss]
 init_speed/backward/speed: 0.557  # [m/s]
